@@ -6,7 +6,8 @@ extension EnumSvgPicture on IconNames {
 
 
    tosvgPictureConvert(Color? color) {
-    return SvgPicture.asset("assets/Icons/$name.svg",color: color,);
+
+    return SvgPicture.asset("assets/Icon/$name.svg",color: color,width: 24,height: 24,);
   }
 }
 enum IconNames {

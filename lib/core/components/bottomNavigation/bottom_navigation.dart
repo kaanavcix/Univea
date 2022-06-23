@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:univea/core/constants/app/gradient-utility.dart';
+import 'package:univea/core/constants/embabed/embabed_utility.dart';
 import 'package:univea/core/constants/enums/Icon-enums.dart';
 
 class BottomNavigatior extends StatelessWidget {
@@ -9,14 +10,15 @@ class BottomNavigatior extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
-        child: SizedBox(
-      height: 55,
-      child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,children: [
+        child: Container(
+          color: EmbabedUtility.pureBlack,
+      height: 64,
+      child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,crossAxisAlignment: CrossAxisAlignment.center,children: [
         IconNormal(child: IconNames.feed.tosvgPictureConvert(Colors.white)),
-        IconNormal(child: IconNames.search.tosvgPictureConvert(Colors.white)),
-        IconCircular(child: IconNames.plus.tosvgPictureConvert(Colors.white),),
-        IconNormal(child: IconNames.alert.tosvgPictureConvert(Colors.white)),
-        IconNormal(child: IconNames.profile.tosvgPictureConvert(Colors.white)),
+        IconNormal(child: IconNames.search.tosvgPictureConvert(EmbabedUtility.socialGray)),
+        IconCircular(child: Padding(padding:EdgeInsets.all(8),child:IconNames.plus.tosvgPictureConvert(Colors.white)),),
+        IconNormal(child: IconNames.alert.tosvgPictureConvert(EmbabedUtility.socialGray)),
+        IconNormal(child: IconNames.profile.tosvgPictureConvert(EmbabedUtility.socialGray)),
       ]),
     ));
   }
@@ -34,8 +36,8 @@ class IconCircular extends StatelessWidget {
   Widget build(BuildContext context) {
     
     return Container(
-        width: 50,
-        height: 50,
+        width: 40,
+        height: 40,
         decoration: const BoxDecoration(
           shape: BoxShape.circle,
           gradient: GradientUtility.socialGradient,
