@@ -1,0 +1,14 @@
+import 'package:flutter/material.dart';
+
+class EmbabedUtility {
+  static const Color primaryColor = Color(0xff181A1C);
+  static const Color socialblue = Color(0xff2E8AF6);
+  static const Color socialpink = Color(0xffF62E8E);
+  static const Color socialwhite = Color(0xffECEBED);
+  static const Color socialGray = Color(0xff323436);
+  static const Color socialLightGray = Color(0xff727477);
+  static const Color socialPink = Color(0xffF62E8E);
+    static const Color socialPurple = Color(0xffAC1AF0);
+
+
+}
