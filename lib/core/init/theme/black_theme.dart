@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:univea/core/constants/embabed/embabed_utility.dart';
+import 'package:univea/core/init/theme/text_theme.dart';
+import 'package:univea/core/utility/embabed/embabed_utility.dart';
 
 ThemeData darkTheme = ThemeData(
-    colorScheme: ColorScheme(
+
+  textTheme: textTheme,
+  scaffoldBackgroundColor: EmbabedUtility.darkBlack,
+    colorScheme: const ColorScheme(
         brightness: Brightness.dark,
         primary: EmbabedUtility.primaryColor,
         onPrimary: EmbabedUtility.primaryColor,

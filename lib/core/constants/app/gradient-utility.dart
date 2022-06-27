@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:univea/core/constants/embabed/embabed_utility.dart';
+import 'package:univea/core/utility/embabed/embabed_utility.dart';
 
 class GradientUtility {
   static const LinearGradient socialGradient = LinearGradient(

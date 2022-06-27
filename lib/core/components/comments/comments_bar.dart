@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:univea/core/components/bottomNavigation/bottom_navigation.dart';
-import 'package:univea/core/constants/embabed/embabed_utility.dart';
 import 'package:univea/core/constants/enums/Icon-enums.dart';
+import 'package:univea/core/utility/embabed/embabed_utility.dart';
 
 class CommentsBar extends StatelessWidget {
   const CommentsBar({Key? key}) : super(key: key);
